@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@babel/preset-env": "^7.15.0",
-    "cra-template": "1.1.2",
-    "isomorphic-fetch": "^3.0.0",
+    "isomorphic-fetch": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3"
@@ -29,7 +27,7 @@
   },
   "scripts": {
     "webpack": "node_modules/.bin/webpack",
-    "babel": "node_modules/.bin/babel src -d functions/src",
+    "babel": "node_modules/.bin/babel src -d functions/src && node_modules/.bin/babel index.js -d functions",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
